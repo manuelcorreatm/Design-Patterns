@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Div Editor</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Div Editor</h2>
+        <div id="editor"> 
+        </div>
+
+        <div id="controls">      
+            <div id="styleControls">
+                <h2>Controls</h2>
+                <div>
+                    <label>Border color: </label>
+                    <input type="color" id="borderColor" />
+                </div>
+                <div>
+                    <label>Border thickness: </label>
+                    <input type="range" id="borderThickness" />
+                </div>
+                <div>
+                    <label>Background color: </label>
+                    <input type="color" id="backgroundColor" />
+                </div>
+                <div>
+                    <label>Rounded edges: </label>
+                    <label>
+                        Yes
+                        <input type="radio" name="rounded" id="roundedYesRdo" />
+                    </label>
+                    <label>
+                        No
+                        <input type="radio" name="rounded" checked id="roundedNoRdo" />
+                    </label>
+                </div>
+            </div>
+            
+            <div id="historyControls">
+                <h2>History</h2>
+                <div>
+                    <button id="undo"disabled="disabled">Undo</button>
+                </div>
+                <div>
+                    <button id="record">Record Macro</button>
+                </div>
+                <div>
+                    <button id="apply" disabled="disabled">Apply Macro</button>
+                </div>
+                <div>
+                    <button id="erase" disabled="disabled">Erase Macro</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="container">
+            <div id="div1" draggable="true" class="editable"></div>
+            <div id="div2" draggable="true" class="editable"></div>
+            <div id="div3" draggable="true" class="editable"></div>
+            <div id="div4" draggable="true" class="editable"></div>
+            <div id="div5" draggable="true" class="editable"></div>
+        </div>
+        
+    </div>
+    <script src="divEditor.js"></script>
+</body>
+</html>

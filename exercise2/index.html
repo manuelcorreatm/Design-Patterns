@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Design Patterns - Exercise 2</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <h1>MC Paint</h1>
+        <p>Select a figure and click the canvas to draw it. Click and hold an already drawed figure to drag it.</p>
+
+        <div id="tools">
+            <h2>Figures</h2>
+            <form id="figures">
+                <label>
+                    <input type="radio" name="shape" value="circle" id="circleRadio" checked="checked" />
+                    Circle
+                </label>
+                <label>
+                    <input type="radio" name="shape" value="square" />
+                    Square
+                </label>
+                <label>
+                    <input type="radio" name="shape" value="triangle" />
+                    Triangle
+                </label>
+            </form>
+        </div>
+
+        <div id="editor">
+            <h2>Canvas</h2>
+            <div id="canvasContainer">
+                <canvas id="canvasPainted" width="800" height="500"></canvas>
+                <canvas id="canvasMovin" width="800" height="500"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <script src="paint.js"></script>
+</body>
+</html>
